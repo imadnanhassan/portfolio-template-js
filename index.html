@@ -10,6 +10,10 @@
    <!-- main css -->
    <link rel="stylesheet" href="./css/main.css">
    <link rel="stylesheet" href="./css/color.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -23,33 +27,34 @@
                <span></span>
             </div>
             <ul class="nav">
-               <li><a href="#home">Home</a></li>
-               <li><a href="#about">About</a></li>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
                <li><a href="#">Services</a></li>
                <li><a href="#">Portfolio</a></li>
                <li><a href="#">Contact</a></li>
             </ul>
          </div>
       </div>
-     
+
    </header>
    <main>
       <div class="main-content">
          <!-- Home Section -->
          <section class="home section hidden">
-          <div class="container">
-            <div class="row">
-               <div class="home-info padd-15">
-                  <h3 class="hello">Hello, my name is <span class="name">Adnan Hassan</span></h3>
-                  <h3 class="my-profession">I am a <span class="typing">web designer</span></h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi assumenda repudiandae delectus ipsum vero similique repellat in!</p>
-                  <a href="#contact" class="btn-hire-me" >Hire Me</a>
-               </div>
-               <div class="home-img padd-15">
-                  <img src="./images/adnan.jpg" alt="">
+            <div class="container">
+               <div class="row">
+                  <div class="home-info padd-15">
+                     <h3 class="hello">Hello, my name is <span class="name">Adnan Hassan</span></h3>
+                     <h3 class="my-profession">I am a <span class="typing">web designer</span></h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi assumenda repudiandae delectus
+                        ipsum vero similique repellat in!</p>
+                     <a href="#contact" class="btn hire-me">Hire Me</a>
+                  </div>
+                  <div class="home-img padd-15">
+                     <img src="./images/adnan.jpg" alt="">
+                  </div>
                </div>
             </div>
-          </div>
          </section>
          <!-- About Section -->
          <section class="about section">
@@ -63,42 +68,130 @@
                   <div class="row">
                      <div class="about-text">
                         <h3>I am Adnan a <span>Full Stack Developer</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A tempora repellendus itaque natus, veritatis veniam modi magni quod dolore corporis enim, ipsam esse? Assumenda quis debitis adipisci reiciendis voluptatem labore.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A tempora repellendus itaque natus,
+                           veritatis veniam modi magni quod dolore corporis enim, ipsam esse? Assumenda quis debitis
+                           adipisci reiciendis voluptatem labore.</p>
                      </div>
                   </div>
                   <div class="row">
                      <div class="personal-info padd-15">
                         <div class="row">
-                           <div class="info-item">
+                           <div class="info-item ">
                               <p>Birthday: <span>28 Aug 1998</span></p>
                            </div>
-                           <div class="info-item">
+                           <div class="info-item padd-15">
                               <p>Age: <span>24</span></p>
                            </div>
-                           <div class="info-item">
+                           <div class="info-item ">
                               <p>Degree: <span>CS</span></p>
                            </div>
-                           <div class="info-item">
+                           <div class="info-item padd-15">
                               <p>City: <span>Bangladesh</span></p>
                            </div>
-                           <div class="info-item">
+                           <div class="info-item ">
                               <p>Email: <span>mail@dev-hassan.com</span></p>
                            </div>
-                           <div class="info-item">
+                           <div class="info-item padd-15">
                               <p>Phone: <span>+880 1234567890</span></p>
                            </div>
                            <div class="info-item">
                               <p>Freelancer: <span>Available</span></p>
                            </div>
-                           
+                        </div>
+                        <div class="row">
+                           <div class="buttons">
+                              <a href="#" class="btn">Download CV</a>
+                              <a href="#" class="btn hire-me">Hire Me</a>
+                           </div>
                         </div>
                      </div>
-                     <div class="skills padd-15">Skills</div>
+                     <div class="skills padd-15">
+                        <div class="row">
+                           <div class="skill-item padd-15">
+                              <h5>HTML</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 90% ;"></div>
+                                 <div class="skill-percent">90%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>CSS</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 80% ;"></div>
+                                 <div class="skill-percent">80%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>Bootstrap</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 60% ;"></div>
+                                 <div class="skill-percent">60%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>Tailwind CSS</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 76% ;"></div>
+                                 <div class="skill-percent">76%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>JS</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 70% ;"></div>
+                                 <div class="skill-percent">70%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>FireBase</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 75% ;"></div>
+                                 <div class="skill-percent">75%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>MongoDb</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 70% ;"></div>
+                                 <div class="skill-percent">70%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>Express Js</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 77% ;"></div>
+                                 <div class="skill-percent">77%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>React Js</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 85% ;"></div>
+                                 <div class="skill-percent">85%</div>
+                              </div>
+                           </div>
+                           <div class="skill-item padd-15">
+                              <h5>Node Js</h5>
+                              <div class="progress">
+                                 <div class="progress-in" style="width: 78% ;"></div>
+                                 <div class="skill-percent">78%</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="education">
+                        <h3 class="title">Education</h3>
+                     </div>
+                     <div class="experience padd-15">
+                        <h3 class="title">Experience</h3>
+                     </div>
                   </div>
                </div>
             </div>
          </section>
-       </div>
+      </div>
    </main>
    <footer></footer>
 
