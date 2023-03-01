@@ -457,3 +457,8 @@ ul {
    font-weight: 700;
    color: var(--text-black-900);
 }
+.about .timline-box{
+   flex: 0 0 100%;
+   max-width: 100%;
+   background-color: var(--skin-color);
+}
