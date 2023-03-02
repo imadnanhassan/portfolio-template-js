@@ -727,3 +727,49 @@ textarea .form-control{
    height: 50px;
    padding: 0 50px;
 }
+
+
+/* Responcive */
+@media (max-width:1100px) {
+   .aside{
+      left: -270px;
+   }
+   .main-content{
+      padding-left: 0;
+   }
+   .about .personal-info .info-item p span{
+      display: block;
+      margin-left: 0;
+   }
+}
+@media (max-width:999px){
+   .home .home-img{
+      display: none;
+   }
+   .home .home-info{
+      flex: 0 0 100%;
+      max-width: 100%;
+   }
+   .portfolio .portfolio-item,
+   .contact .contact-info-item,
+   .services .services-item{
+      flex: 0 0 50%;
+      max-width: 50%;
+   }
+   
+}
+/* Medium */
+@media (max-width:768px){
+   .about .about-content .skills,
+   .about .about-content .personal-info,
+   .about .about-content .education,
+   .about .about-content .experience,
+   .services .services-item,
+   .portfolio .portfolio-item,
+   .contact .contact-info-item,
+   .contact .contact-form .col-6
+   {
+      flex: 0 0 100%;
+      max-width: 100%;
+   }
+}
