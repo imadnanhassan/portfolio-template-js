@@ -9,11 +9,18 @@
 
    <!-- main css -->
    <link rel="stylesheet" href="./css/main.css">
-   <link rel="stylesheet" href="./css/color.css">
+   <link rel="stylesheet" href="./css/color-1.css">
+   <link rel="stylesheet" href="/css/style-switcher.css">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link rel="stylesheet" href="./css/color-1.css" class="alternate-style" title="color-1" disabled>
+   <link rel="stylesheet" href="./css/color-2.css" class="alternate-style" title="color-2" disabled>
+   <link rel="stylesheet" href="./css/color-3.css" class="alternate-style" title="color-3" disabled>
+   <link rel="stylesheet" href="./css/color-4.css" class="alternate-style" title="color-4" disabled>
+   <link rel="stylesheet" href="./css/color-5.css" class="alternate-style" title="color-5" disabled>
 </head>
 
 <body>
@@ -27,11 +34,11 @@
                <span></span>
             </div>
             <ul class="nav">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="#">Contact</a></li>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
             </ul>
          </div>
       </div>
@@ -40,12 +47,12 @@
    <main>
       <div class="main-content">
          <!-- Home Section -->
-         <section class="home section">
+         <section id="home" class="home section">
             <div class="container">
                <div class="row">
                   <div class="home-info padd-15">
                      <h3 class="hello">Hello, my name is <span class="name">Adnan Hassan</span></h3>
-                     <h3 class="my-profession">I am a <span class="typing">web designer</span></h3>
+                     <h3 class="my-profession">I am a <span class="typing"></span></h3>
                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi assumenda repudiandae delectus
                         ipsum vero similique repellat in!</p>
                      <a href="#contact" class="btn hire-me">Hire Me</a>
@@ -57,7 +64,7 @@
             </div>
          </section>
          <!-- About Section -->
-         <section class="about section">
+         <section id="about" class="about section">
             <div class="container">
                <div class="row">
                   <div class="section-title padd-15">
@@ -249,7 +256,7 @@
          </section>
 
          <!-- Services Section -->
-         <div class="services section">
+         <div id="services" class="services section">
             <div class="container">
                <div class="row">
                   <div class="section-title padd-15">
@@ -297,7 +304,7 @@
          </div>
 
          <!-- Portfolio Section -->
-         <section>
+         <section id="portfolio">
             <div class="portfolio section">
                <div class="container">
                   <div class="row">
@@ -366,7 +373,7 @@
          </section>
 
          <!-- Contact Section -->
-         <section>
+         <section id="contact">
             <div class="contact section">
                <div class="container">
                   <div class="row">
@@ -422,7 +429,8 @@
                            <div class="form-item col-12 padd-15">
                               <div class="form-group">
                                  <!-- <textarea name="" id="" class="form-control" placeholder="Message"></textarea> -->
-                                 <textarea name="" id="" class="form-control" placeholder="Message" cols="30" rows="10"></textarea>
+                                 <textarea name="" id="" class="form-control" placeholder="Message" cols="30"
+                                    rows="10"></textarea>
                               </div>
                            </div>
                         </div>
@@ -435,13 +443,36 @@
                   </div>
                </div>
             </div>
+
+         </section>
+
+         <section>
+            <div class="style-switcher">
+               <div class="style-switcher-toggler s-icon">
+                  <i class="fas fa-cog fa-spin"></i>
+               </div>
+               <div class="day-night s-icon">
+                  <i class="fas "></i>
+               </div>
+               <h4>Theme Color</h4>
+               <div class="colors">
+                  <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                  <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                  <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                  <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                  <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+               </div>
+
+            </div>
          </section>
       </div>
    </main>
    <footer></footer>
 
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      referrerpolicy="no-referrer"></script>
    <script src="./js/index.js"></script>
+   <script src="/js/style-switcher.js"></script>
 </body>
 
 </html>
