@@ -9,6 +9,9 @@ window.addEventListener('scroll', () => {
       document.querySelector('.style-switcher').classList.remove('open');
    }
 })
+
+// Theme Color
+
 const alternateStyle = document.querySelectorAll('.alternate-style');
 function setActiveStyle(color) {
    alternateStyle.forEach((style) => {

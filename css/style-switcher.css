@@ -42,6 +42,7 @@
 
 .style-switcher .style-switcher-toggler {
    top: 0;
+   display: none;
 }
 
 .style-switcher h4 {
