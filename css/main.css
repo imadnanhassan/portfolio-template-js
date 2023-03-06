@@ -89,7 +89,9 @@ ul {
 .shadow-drak {
    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-
+.typing{
+   font-size: 30px;
+}
 /* asid design */
 .aside {
    width: 270px;
