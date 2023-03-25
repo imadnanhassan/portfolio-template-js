@@ -89,9 +89,11 @@ ul {
 .shadow-drak {
    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-.typing{
+
+.typing {
    font-size: 30px;
 }
+
 /* asid design */
 .aside {
    width: 270px;
@@ -757,6 +759,11 @@ textarea .form-control {
       display: block;
       margin-left: 0;
    }
+
+   .btn {
+      font-size: 16px;
+      padding: 8px 20px;
+   }
 }
 
 @media (max-width:999px) {
@@ -776,6 +783,11 @@ textarea .form-control {
       max-width: 50%;
    }
 
+   .btn {
+      font-size: 16px;
+      padding: 8px 20px;
+   }
+
 }
 
 /* Medium */
@@ -791,5 +803,10 @@ textarea .form-control {
    .contact .contact-form .col-6 {
       flex: 0 0 100%;
       max-width: 100%;
+   }
+
+   .btn {
+      font-size: 16px;
+      padding: 8px 20px;
    }
 }
